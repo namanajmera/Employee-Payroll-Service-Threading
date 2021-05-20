@@ -17,14 +17,18 @@ public class EmployeePayrollTest {
                 new EmployeePayrollData(4, "Sunder Pichai", "M", 400000.0, LocalDate.now()),
                 new EmployeePayrollData(5, "Mukesh", "M", 600000.0, LocalDate.now()),
                 new EmployeePayrollData(6, "Anil", "M", 700000.0, LocalDate.now()) };
-        //creating object and reading data
+        // creating object and reading data
         EmployeePayrollService employeePayrollService = new EmployeePayrollService();
         employeePayrollService.readEmployeePayrollData(EmployeePayrollService.IOService.DB_IO);
-        //It records event time-stamps in the application
+        // It records event time-stamps in the application
         Instant start = Instant.now();
-        employeePayrollService.addEmployeeToPayroll(Arrays.asList(arrayOfEmps)); //adding employee to the payroll
+        employeePayrollService.addEmployeeToPayroll(Arrays.asList(arrayOfEmps)); // adding employee to the payroll
         Instant end = Instant.now();
         System.out.println("Duration without thread : " + Duration.between(start, end));
-        Assertions.assertEquals(10, employeePayrollService.countEntries(EmployeePayrollService.IOService.DB_IO));
+        Instant threadStart = Instant.now();
+        employeePayrollService.addEmployeeToPayrollWithThreads(Arrays.asList(arrayOfEmps));
+        Instant threadEnd = Instant.now();
+        System.out.println("Duartion with Thread : " + Duration.between(threadStart, threadEnd));
+        Assertions.assertEquals(20, employeePayrollService.countEntries(EmployeePayrollService.IOService.DB_IO));
     }
 }

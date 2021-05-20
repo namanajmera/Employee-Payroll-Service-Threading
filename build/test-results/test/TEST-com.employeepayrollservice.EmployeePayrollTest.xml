@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.employeepayrollservice.EmployeePayrollTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-20T03:48:27" hostname="HACKERNAMAN" time="0.929">
+<testsuite name="com.employeepayrollservice.EmployeePayrollTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-20T04:05:06" hostname="HACKERNAMAN" time="1.06">
   <properties/>
-  <testcase name="given6Employees_WhenAddedToDB_ShouldMatchEmployeeEntries()" classname="com.employeepayrollservice.EmployeePayrollTest" time="0.929"/>
+  <testcase name="given6Employees_WhenAddedToDB_ShouldMatchEmployeeEntries()" classname="com.employeepayrollservice.EmployeePayrollTest" time="1.06"/>
   <system-out><![CDATA[Employee being added : Jeff Bezos
 Employee added : Jeff Bezos
 Employee being added : Bill Gates
@@ -14,8 +14,30 @@ Employee being added : Mukesh
 Employee added : Mukesh
 Employee being added : Anil
 Employee added : Anil
-[EmployeePayrollData [emp_id=1, name=Billy, gender=M, salary=3000000.0, startDate=2020-01-02], EmployeePayrollData [emp_id=2, name=Terisa, gender=F, salary=3000000.0, startDate=2019-11-13], EmployeePayrollData [emp_id=3, name=Charlie, gender=M, salary=3000000.0, startDate=2020-05-21], EmployeePayrollData [emp_id=4, name=Bill, gender=M, salary=1000000.0, startDate=2018-01-13], EmployeePayrollData [emp_id=24, name=Jeff Bezos, gender=M, salary=100000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=25, name=Bill Gates, gender=M, salary=200000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=26, name=Mark Zuckerberg, gender=M, salary=300000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=27, name=Sunder Pichai, gender=M, salary=400000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=28, name=Mukesh, gender=M, salary=600000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=29, name=Anil, gender=M, salary=700000.0, startDate=2021-05-20]]
-Duration without thread : PT0.3151543S
+[EmployeePayrollData [emp_id=1, name=Billy, gender=M, salary=3000000.0, startDate=2020-01-02], EmployeePayrollData [emp_id=2, name=Terisa, gender=F, salary=3000000.0, startDate=2019-11-13], EmployeePayrollData [emp_id=3, name=Charlie, gender=M, salary=3000000.0, startDate=2020-05-21], EmployeePayrollData [emp_id=4, name=Bill, gender=M, salary=1000000.0, startDate=2018-01-13], EmployeePayrollData [emp_id=100, name=Jeff Bezos, gender=M, salary=100000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=101, name=Bill Gates, gender=M, salary=200000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=102, name=Mark Zuckerberg, gender=M, salary=300000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=103, name=Sunder Pichai, gender=M, salary=400000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=104, name=Mukesh, gender=M, salary=600000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=105, name=Anil, gender=M, salary=700000.0, startDate=2021-05-20]]
+Duration without thread : PT0.2912183S
+Employee being added : Billy
+Employee being added : Terisa
+Employee being added : Charlie
+Employee being added : Bill Gates
+Employee being added : Mukesh
+Employee being added : Anil
+Employee being added : Bill
+Employee being added : Mark Zuckerberg
+Employee being added : Jeff Bezos
+Employee added : Bill Gates
+Employee being added : Sunder Pichai
+Employee added : Terisa
+Employee added : Charlie
+Employee added : Billy
+Employee added : Anil
+Employee added : Bill
+Employee added : Mark Zuckerberg
+Employee added : Sunder Pichai
+Employee added : Mukesh
+Employee added : Jeff Bezos
+[EmployeePayrollData [emp_id=1, name=Billy, gender=M, salary=3000000.0, startDate=2020-01-02], EmployeePayrollData [emp_id=2, name=Terisa, gender=F, salary=3000000.0, startDate=2019-11-13], EmployeePayrollData [emp_id=3, name=Charlie, gender=M, salary=3000000.0, startDate=2020-05-21], EmployeePayrollData [emp_id=4, name=Bill, gender=M, salary=1000000.0, startDate=2018-01-13], EmployeePayrollData [emp_id=100, name=Jeff Bezos, gender=M, salary=100000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=101, name=Bill Gates, gender=M, salary=200000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=102, name=Mark Zuckerberg, gender=M, salary=300000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=103, name=Sunder Pichai, gender=M, salary=400000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=104, name=Mukesh, gender=M, salary=600000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=105, name=Anil, gender=M, salary=700000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=106, name=Bill Gates, gender=M, salary=200000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=107, name=Terisa, gender=F, salary=3000000.0, startDate=2019-11-13], EmployeePayrollData [emp_id=109, name=Charlie, gender=M, salary=3000000.0, startDate=2020-05-21], EmployeePayrollData [emp_id=108, name=Billy, gender=M, salary=3000000.0, startDate=2020-01-02], EmployeePayrollData [emp_id=110, name=Anil, gender=M, salary=700000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=112, name=Bill, gender=M, salary=1000000.0, startDate=2018-01-13], EmployeePayrollData [emp_id=111, name=Mark Zuckerberg, gender=M, salary=300000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=113, name=Sunder Pichai, gender=M, salary=400000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=114, name=Mukesh, gender=M, salary=600000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=115, name=Jeff Bezos, gender=M, salary=100000.0, startDate=2021-05-20]]
+Duartion with Thread : PT0.1665542S
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
