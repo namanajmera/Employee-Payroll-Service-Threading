@@ -7,6 +7,8 @@ import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class EmployeePayrollTest {
     @Test
@@ -30,5 +32,21 @@ public class EmployeePayrollTest {
         Instant threadEnd = Instant.now();
         System.out.println("Duration with Thread : " + Duration.between(threadStart, threadEnd));
         Assertions.assertEquals(20, employeePayrollService.countEntries(EmployeePayrollService.IOService.DB_IO));
+    }
+
+    @Test
+    public void givenNewSalariesForMultipleEmployee_WhenUpdated_ShouldSyncWithDB() {
+        EmployeePayrollService employeePayrollService = new EmployeePayrollService();
+        employeePayrollService.readEmployeePayrollData(EmployeePayrollService.IOService.DB_IO);
+        Map<String, Double> employeeSalaryMap = new HashMap<>();
+        Instant threadStart = Instant.now();
+        employeeSalaryMap.put("Anil", 3000000.00);
+        employeeSalaryMap.put("Mukesh", 2000000.00);
+        employeeSalaryMap.put("Sunder Pichai", 5000000.00);
+        employeePayrollService.updateSalaryOfMultipleEmployees(employeeSalaryMap);
+        Instant threadEnd = Instant.now();
+        System.out.println("Duration with Thread : " + Duration.between(threadStart, threadEnd));
+        boolean result = employeePayrollService.checkEmployeePayrollInSyncWithDB("Mukesh");
+        Assertions.assertTrue(result);
     }
 }
