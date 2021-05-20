@@ -7,7 +7,6 @@ import java.util.List;
 
 public class EmployeePayrollDBService {
     private static EmployeePayrollDBService employeePayrollDBService;
-//    private static Logger log = Logger.getLogger(EmployeePayrollDBService.class.getName());
     private int connectionCounter = 0;
 
     // creating the object of Signature and getting instance

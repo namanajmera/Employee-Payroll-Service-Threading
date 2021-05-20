@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.324s</div>
+<div class="counter">1.259s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">given6Employees_WhenAddedToDB_ShouldMatchEmployeeEntries()</td>
-<td class="success">1.324s</td>
+<td class="success">1.259s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -88,74 +88,76 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Processing Thread : Test workerConnecting to database : jdbc:mysql://localhost:3307/payroll_service
-Processing Thread : Test worker ID : 1 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@6fab3557
+Processing Thread : Test worker ID : 1 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@76b8c791
 Employee being added : Jeff Bezos
 Processing Thread : Test workerConnecting to database : jdbc:mysql://localhost:3307/payroll_service
-Processing Thread : Test worker ID : 2 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@5d4f051b
+Processing Thread : Test worker ID : 2 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@29d91c84
 Employee added : Jeff Bezos
 Employee being added : Bill Gates
 Processing Thread : Test workerConnecting to database : jdbc:mysql://localhost:3307/payroll_service
-Processing Thread : Test worker ID : 3 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@ca995fe
+Processing Thread : Test worker ID : 3 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@22587bc4
 Employee added : Bill Gates
 Employee being added : Mark Zuckerberg
 Processing Thread : Test workerConnecting to database : jdbc:mysql://localhost:3307/payroll_service
-Processing Thread : Test worker ID : 4 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@5510cfca
+Processing Thread : Test worker ID : 4 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@42e0682e
 Employee added : Mark Zuckerberg
 Employee being added : Sunder Pichai
 Processing Thread : Test workerConnecting to database : jdbc:mysql://localhost:3307/payroll_service
-Processing Thread : Test worker ID : 5 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@7793521a
+Processing Thread : Test worker ID : 5 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@24f1d0ab
 Employee added : Sunder Pichai
 Employee being added : Mukesh
 Processing Thread : Test workerConnecting to database : jdbc:mysql://localhost:3307/payroll_service
-Processing Thread : Test worker ID : 6 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@cb523c5
+Processing Thread : Test worker ID : 6 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@c5dfe89
 Employee added : Mukesh
 Employee being added : Anil
 Processing Thread : Test workerConnecting to database : jdbc:mysql://localhost:3307/payroll_service
-Processing Thread : Test worker ID : 7 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@58965f51
+Processing Thread : Test worker ID : 7 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@69b0cb4f
 Employee added : Anil
-[EmployeePayrollData [emp_id=1, name=Billy, gender=M, salary=3000000.0, startDate=2020-01-02], EmployeePayrollData [emp_id=2, name=Terisa, gender=F, salary=3000000.0, startDate=2019-11-13], EmployeePayrollData [emp_id=3, name=Charlie, gender=M, salary=3000000.0, startDate=2020-05-21], EmployeePayrollData [emp_id=4, name=Bill, gender=M, salary=1000000.0, startDate=2018-01-13], EmployeePayrollData [emp_id=155, name=Jeff Bezos, gender=M, salary=100000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=156, name=Bill Gates, gender=M, salary=200000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=157, name=Mark Zuckerberg, gender=M, salary=300000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=158, name=Sunder Pichai, gender=M, salary=400000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=159, name=Mukesh, gender=M, salary=600000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=160, name=Anil, gender=M, salary=700000.0, startDate=2021-05-20]]
+[EmployeePayrollData [emp_id=1, name=Billy, gender=M, salary=3000000.0, startDate=2020-01-02], EmployeePayrollData [emp_id=2, name=Terisa, gender=F, salary=3000000.0, startDate=2019-11-13], EmployeePayrollData [emp_id=3, name=Charlie, gender=M, salary=3000000.0, startDate=2020-05-21], EmployeePayrollData [emp_id=4, name=Bill, gender=M, salary=1000000.0, startDate=2018-01-13], EmployeePayrollData [emp_id=171, name=Jeff Bezos, gender=M, salary=100000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=172, name=Bill Gates, gender=M, salary=200000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=173, name=Mark Zuckerberg, gender=M, salary=300000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=174, name=Sunder Pichai, gender=M, salary=400000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=175, name=Mukesh, gender=M, salary=600000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=176, name=Anil, gender=M, salary=700000.0, startDate=2021-05-20]]
+Duration without thread : PT0.2782561S
 Employee being added : Billy
 Employee being added : Terisa
-Processing Thread : BillyConnecting to database : jdbc:mysql://localhost:3307/payroll_service
 Employee being added : Charlie
+Processing Thread : TerisaConnecting to database : jdbc:mysql://localhost:3307/payroll_service
 Employee being added : Jeff Bezos
-Employee being added : Bill
 Employee being added : Bill Gates
 Employee being added : Sunder Pichai
+Employee being added : Bill
 Employee being added : Mark Zuckerberg
-Employee being added : Anil
 Employee being added : Mukesh
-Processing Thread : Billy ID : 8 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@65f0c046
-Processing Thread : MukeshConnecting to database : jdbc:mysql://localhost:3307/payroll_service
-Employee added : Billy
-Processing Thread : Mukesh ID : 9 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@17c83cda
+Employee being added : Anil
+Processing Thread : Terisa ID : 8 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@1eeb58a9
 Processing Thread : AnilConnecting to database : jdbc:mysql://localhost:3307/payroll_service
-Employee added : Mukesh
-Processing Thread : Anil ID : 10 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@66c5fe88
-Processing Thread : Sunder PichaiConnecting to database : jdbc:mysql://localhost:3307/payroll_service
+Employee added : Terisa
+Processing Thread : Anil ID : 9 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@69eb693
+Processing Thread : MukeshConnecting to database : jdbc:mysql://localhost:3307/payroll_service
 Employee added : Anil
-Processing Thread : Sunder Pichai ID : 11 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@58066dbb
+Processing Thread : Mukesh ID : 10 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@66c5fe88
 Processing Thread : Mark ZuckerbergConnecting to database : jdbc:mysql://localhost:3307/payroll_service
-Employee added : Sunder Pichai
-Processing Thread : Mark Zuckerberg ID : 12 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@7770d944
-Processing Thread : Bill GatesConnecting to database : jdbc:mysql://localhost:3307/payroll_service
-Employee added : Mark Zuckerberg
-Processing Thread : Bill Gates ID : 13 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@611e6c9b
+Employee added : Mukesh
+Processing Thread : Mark Zuckerberg ID : 11 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@58066dbb
 Processing Thread : BillConnecting to database : jdbc:mysql://localhost:3307/payroll_service
-Employee added : Bill Gates
-Processing Thread : Bill ID : 14 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@504ac3ca
-Processing Thread : Jeff BezosConnecting to database : jdbc:mysql://localhost:3307/payroll_service
+Employee added : Mark Zuckerberg
+Processing Thread : Bill ID : 12 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@34f79658
+Processing Thread : Sunder PichaiConnecting to database : jdbc:mysql://localhost:3307/payroll_service
 Employee added : Bill
-Processing Thread : Jeff Bezos ID : 15 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@75ca9c63
+Processing Thread : Sunder Pichai ID : 13 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@56f536e1
+Processing Thread : Bill GatesConnecting to database : jdbc:mysql://localhost:3307/payroll_service
+Employee added : Sunder Pichai
+Processing Thread : Bill Gates ID : 14 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@364dd37f
+Processing Thread : BillyConnecting to database : jdbc:mysql://localhost:3307/payroll_service
+Employee added : Bill Gates
+Processing Thread : Billy ID : 15 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@79b63219
+Processing Thread : Jeff BezosConnecting to database : jdbc:mysql://localhost:3307/payroll_service
+Employee added : Billy
+Processing Thread : Jeff Bezos ID : 16 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@57fee54
 Processing Thread : CharlieConnecting to database : jdbc:mysql://localhost:3307/payroll_service
 Employee added : Jeff Bezos
-Processing Thread : Charlie ID : 16 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@7a8abd9b
-Processing Thread : TerisaConnecting to database : jdbc:mysql://localhost:3307/payroll_service
+Processing Thread : Charlie ID : 17 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@504ac3ca
 Employee added : Charlie
-Processing Thread : Terisa ID : 17 Connection is successful! com.mysql.cj.jdbc.ConnectionImpl@79b63219
-Employee added : Terisa
-Duration without thread : PT0.2952109S[EmployeePayrollData [emp_id=1, name=Billy, gender=M, salary=3000000.0, startDate=2020-01-02], EmployeePayrollData [emp_id=2, name=Terisa, gender=F, salary=3000000.0, startDate=2019-11-13], EmployeePayrollData [emp_id=3, name=Charlie, gender=M, salary=3000000.0, startDate=2020-05-21], EmployeePayrollData [emp_id=4, name=Bill, gender=M, salary=1000000.0, startDate=2018-01-13], EmployeePayrollData [emp_id=155, name=Jeff Bezos, gender=M, salary=100000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=156, name=Bill Gates, gender=M, salary=200000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=157, name=Mark Zuckerberg, gender=M, salary=300000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=158, name=Sunder Pichai, gender=M, salary=400000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=159, name=Mukesh, gender=M, salary=600000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=160, name=Anil, gender=M, salary=700000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=161, name=Billy, gender=M, salary=3000000.0, startDate=2020-01-02], EmployeePayrollData [emp_id=162, name=Mukesh, gender=M, salary=600000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=163, name=Anil, gender=M, salary=700000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=164, name=Sunder Pichai, gender=M, salary=400000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=165, name=Mark Zuckerberg, gender=M, salary=300000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=166, name=Bill Gates, gender=M, salary=200000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=167, name=Bill, gender=M, salary=1000000.0, startDate=2018-01-13], EmployeePayrollData [emp_id=168, name=Jeff Bezos, gender=M, salary=100000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=169, name=Charlie, gender=M, salary=3000000.0, startDate=2020-05-21], EmployeePayrollData [emp_id=170, name=Terisa, gender=F, salary=3000000.0, startDate=2019-11-13]]
-Duartion with Thread : PT0.3809801S</pre>
+[EmployeePayrollData [emp_id=1, name=Billy, gender=M, salary=3000000.0, startDate=2020-01-02], EmployeePayrollData [emp_id=2, name=Terisa, gender=F, salary=3000000.0, startDate=2019-11-13], EmployeePayrollData [emp_id=3, name=Charlie, gender=M, salary=3000000.0, startDate=2020-05-21], EmployeePayrollData [emp_id=4, name=Bill, gender=M, salary=1000000.0, startDate=2018-01-13], EmployeePayrollData [emp_id=171, name=Jeff Bezos, gender=M, salary=100000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=172, name=Bill Gates, gender=M, salary=200000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=173, name=Mark Zuckerberg, gender=M, salary=300000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=174, name=Sunder Pichai, gender=M, salary=400000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=175, name=Mukesh, gender=M, salary=600000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=176, name=Anil, gender=M, salary=700000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=177, name=Terisa, gender=F, salary=3000000.0, startDate=2019-11-13], EmployeePayrollData [emp_id=178, name=Anil, gender=M, salary=700000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=179, name=Mukesh, gender=M, salary=600000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=180, name=Mark Zuckerberg, gender=M, salary=300000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=181, name=Bill, gender=M, salary=1000000.0, startDate=2018-01-13], EmployeePayrollData [emp_id=182, name=Sunder Pichai, gender=M, salary=400000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=183, name=Bill Gates, gender=M, salary=200000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=184, name=Billy, gender=M, salary=3000000.0, startDate=2020-01-02], EmployeePayrollData [emp_id=185, name=Jeff Bezos, gender=M, salary=100000.0, startDate=2021-05-20], EmployeePayrollData [emp_id=186, name=Charlie, gender=M, salary=3000000.0, startDate=2020-05-21]]
+Duration with Thread : PT0.3580368S
+</pre>
 </span>
 </div>
 </div>
@@ -166,7 +168,7 @@ Duartion with Thread : PT0.3809801S</pre>
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.0</a> at 20-May-2021, 9:46:59 am</p>
+<a href="http://www.gradle.org">Gradle 7.0</a> at 20-May-2021, 9:53:46 am</p>
 </div>
 </div>
 </body>

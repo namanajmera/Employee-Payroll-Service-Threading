@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 public class EmployeePayrollService {
-//    private static Logger log = Logger.getLogger(EmployeePayrollService.class.getName());
 
     public enum IOService {
         CONSOLE_IO, FILE_IO, DB_IO, REST_IO;
